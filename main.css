@@ -22,7 +22,21 @@
 }
 
 .intro{
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.my-button{
+
+    padding: 2rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    flex-basis: 40%;
+    margin:5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    
 }
 
