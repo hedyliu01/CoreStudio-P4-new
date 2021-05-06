@@ -3,11 +3,8 @@
     align-items: left;
 }
 
-#canvas {
-    width:2000px;
-    height:2000px;
-    border: 10px solid transparent;
-}
+
+
 .rectangle {
     border: 1px solid #FF0000;
     position: absolute;
@@ -28,8 +25,8 @@
 }
 
 .my-button{
-
-    padding: 2rem;
+    width: 200px;
+    padding: 1.5rem;
     background-color: transparent;
     box-sizing: border-box;
     border: 1px solid black;
@@ -42,9 +39,25 @@
     
 }
 
+.my-button:hover{
+    padding: 1.5rem;
+    background-color: blue;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 10px;
+    flex-basis: 40%;
+    margin:5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+    margin-left: 50px;
+}
+
 .heading{
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
+    margin-left: 55px;
 }
 
 ::-webkit-scrollbar {
@@ -52,15 +65,15 @@
     height: 10px;
    }
    ::-webkit-scrollbar-thumb {
-    background: white;
+    background: transparent;
     border: 1px solid black;
     border-radius: 30px;
    }
    ::-webkit-scrollbar-thumb:hover{
-    background: grey;
+    background: blue;
    }
    ::-webkit-scrollbar-track{
-    background: white;
+    background: transparent;
     border-radius: 0px;
    }
 

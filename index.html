@@ -28,7 +28,9 @@
        <br>
        <div align="left">
         <input class=my-button type="button" value="Clear Area"button onclick="javascript:clearArea();return false;"></button>
-       <span class="heading">Line Width</span>: <select id="selWidth">
+     <br>
+     <br>
+        <span class="heading">Line Width</span>: <select id="selWidth">
             <option value="1">1</option>
             <option value="3">3</option>
             <option value="5">5</option>
@@ -36,6 +38,8 @@
             <option value="9" selected="selected">9</option>
             <option value="11">11</option>
         </select>
+        <br>
+     <br>
         <span class="heading">Color</span><select id="selColor">
             <option value="black">black</option>
             <option value="blue" selected="selected">blue</option>
@@ -48,21 +52,21 @@
        <br>
        <input class=my-button type="button" value="Change to orange" onclick = "Corange()"> 
     </button>
-
+<br>
     <input class=my-button type="button" value="Change to green" onclick = "Cgreen()"> 
     </button>
-
+<br>
     <input class=my-button type="button" value="Change to pink" onclick = "Cpink()"> 
     </button>
-
+<br>
     <input class=my-button type="button" value="Change to grey" onclick = "Cgrey()"> 
     </button>
-
+<br>
     <input class=my-button type="button" value="Change to white" onclick = "Cwhite()"> 
     </button>
 
        <br>
-       <canvas id="canvas1" width="1300" height="500" style="border:1px solid white;">
+       <canvas id="canvas1" style="border:turquoise;" position="fixed">
         This text is displayed if your browser does not support HTML5 Canvas.
        </canvas>
       
@@ -70,7 +74,7 @@
        <br>
     
         <br>
-        <canvas id="myCanvas" width="1300" height="500" style="border:2px solid white"></canvas>
+       
     </div>
 
     <br>
@@ -81,6 +85,15 @@
 
           
         <script>
+
+var main = document.getElementById("canvas1");
+var render = main.getContext("2d");
+main.width = 1000;
+main.height = 650;
+main.style.right = "100px";
+main.style.top = "100px";
+main.style.position = "absolute";
+
             var el_up = document.getElementById("GFG_UP");
             var el_down = document.getElementById("GFG_DOWN");
             var str = "Click on button to change the background color";

@@ -4,23 +4,23 @@ var lastX, lastY;
 var ctx;
 
 function InitThis() {
-    ctx = document.getElementById('myCanvas').getContext("2d");
+    ctx = document.getElementById('canvas1').getContext("2d");
 
-    $('#myCanvas').mousedown(function (e) {
+    $('#canvas1').mousedown(function (e) {
         mousePressed = true;
         Draw(e.pageX - $(this).offset().left, e.pageY - $(this).offset().top, false);
     });
 
-    $('#myCanvas').mousemove(function (e) {
+    $('#canvas1').mousemove(function (e) {
         if (mousePressed) {
             Draw(e.pageX - $(this).offset().left, e.pageY - $(this).offset().top, true);
         }
     });
 
-    $('#myCanvas').mouseup(function (e) {
+    $('#canvas1').mouseup(function (e) {
         mousePressed = false;
     });
-	    $('#myCanvas').mouseleave(function (e) {
+	    $('#canvas1').mouseleave(function (e) {
         mousePressed = false;
     });
 }
